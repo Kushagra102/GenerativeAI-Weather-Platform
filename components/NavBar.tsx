@@ -69,6 +69,11 @@ export function NavBar() {
                             </Link>
                         </DialogClose>
                         <DialogClose asChild>
+                            <Link href="/blog">
+                                <Button variant="outline" className="w-full">Blog</Button>
+                            </Link>
+                        </DialogClose>
+                        <DialogClose asChild>
                             <Link href="/">
                                 <SignOutButton signOutOptions={{ sessionId }} >
                                     <Button variant="destructive" className="w-full">Log Out</Button>
@@ -96,6 +101,13 @@ export function NavBar() {
                         <Link href="/chat" legacyBehavior passHref className="cursor-pointer">
                             <NavigationMenuLink className={navigationMenuTriggerStyle()}>
                                 Chat
+                            </NavigationMenuLink>
+                        </Link>
+                    </NavigationMenuItem>
+                    <NavigationMenuItem>
+                        <Link href="/blog" legacyBehavior passHref className="cursor-pointer">
+                            <NavigationMenuLink className={navigationMenuTriggerStyle()}>
+                                Blog
                             </NavigationMenuLink>
                         </Link>
                     </NavigationMenuItem>

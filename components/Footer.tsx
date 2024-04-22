@@ -27,7 +27,7 @@ export function Footer() {
   const [humOut, setHumOut] = useState(70);
   const [pressure, setPressure] = useState(1000);
   const [rainfall, setRainfall] = useState(15);
-  const [windDirection, setWindDirection] = useState("NA");
+  const [windDirection, setWindDirection] = useState("South-West");
   const [windSpeed, setWindSpeed] = useState(29);
   const [windAvg, setWindAvg] = useState(27);
 
